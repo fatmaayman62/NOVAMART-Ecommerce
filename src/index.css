@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@plugin '../hero.js';
+/* Note: You may need to change the path to fit your project structure */
+@source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
+
+ @utility container{
+    @apply mx-auto w-[80%];
+ }
+@utility active{
+    @apply text-blue-500 font-semibold;
+    
+}
